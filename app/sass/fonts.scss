@@ -1,0 +1,24 @@
+@font-face {
+  // название шрифта(чтобы не запутаться лучше указать название папки со шрифтом)
+  font-family: "Montserrat";
+  // адрес шрифта и тип
+  src: url("../fonts/Montserrat-Regular.ttf") format("truetype");
+  font-style: normal;
+  font-weight: normal;
+}
+@font-face {
+  // название шрифта(чтобы не запутаться лучше указать название папки со шрифтом)
+  font-family: "Noto";
+  // адрес шрифта и тип
+  src: url("../fonts/NotoSans-Regular.ttf") format("truetype");
+  font-style: normal;
+  font-weight: normal;
+}
+@font-face {
+  // название шрифта(чтобы не запутаться лучше указать название папки со шрифтом)
+  font-family: "Comfortaa";
+  // адрес шрифта и тип
+  src: url("../fonts/Comfortaa-Regular.ttf") format("truetype");
+  font-style: normal;
+  font-weight: normal;
+}

@@ -1,0 +1,139 @@
+
+
+//MIXIN
+@mixin placeholder {
+  &::-webkit-input-placeholder {
+    @content;
+  }
+  &:-moz-placeholder {
+    @content;
+  }
+  &::-moz-placeholder {
+    @content;
+  }
+  &:-ms-input-placeholder {
+    @content;
+  }
+}
+@keyframes preload {
+  from {
+    transform: scale(1);
+  }
+  to {
+    transform:  scale(1.7);
+  }
+}
+@keyframes bg {
+  from{
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+//TEXT SELECTORS
+.f12{font-size: 1.2rem;}
+.f14{font-size: 1.4rem;}
+.f15{font-size:1.5rem;}
+.f16{font-size: 1.6rem;}
+.f18{font-size: 1.8rem;}
+.f20{font-size: 2rem;}
+.f25{font-size: 2.5rem;}
+.f28{font-size: 2.8rem;}
+.f30{font-size: 3rem;}
+.f36{font-size: 3.6rem;}
+.f40{font-size: 4rem;}
+.f45{font-size: 4.5rem;}
+.f50{font-size: 5rem;}
+.f60{font-size: 6rem;}
+.f65{font-size: 6.5rem;}
+.f80{font-size: 8rem;}
+.f86{font-size: 8.6rem;}
+.text-center{
+  text-align: center;
+}
+.text-right{
+  text-align: right;
+}
+.text-left{
+  text-align: left;
+}
+.text-justify{
+  text-align: justify;
+}
+.bold{
+  font-weight: 700;
+}
+.uppercase{
+  text-transform:uppercase;
+}
+//FLEX SELECTOR
+.flex {
+  display: flex;
+}
+.f-center{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.f-v-center{
+  display: flex;
+  align-items: center;
+}
+.f-sb-center{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.f-sb{
+  display: flex;
+  justify-content: space-between;
+}
+.f-sa-center{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.f-fe-center{
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+.f-column{
+  display: flex;
+  flex-direction:column;
+}
+.f-column-center{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.f-column-sa{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+  }
+.f-column-sb{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+.f-end {
+  display: flex;
+  justify-content: flex-end;
+}
+.f-g-center{
+  display: flex;
+  justify-content:center;
+}
+.hidden {
+  display:none;
+}
+.block {
+  display: block;
+}

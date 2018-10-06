@@ -1,0 +1,55 @@
+@import "normalize";
+@import "fonts";
+@import "bootstrap-grid";
+@import "const";
+@import "settings";
+@import "magnific_settings";
+@import "magnific";
+/*@import "slick";
+@import "slick-theme";*/
+//@import "preloader";
+/*@import "animate";*/
+@import "m_menu";
+
+html {
+  font-size: 10px;
+}
+body {
+  color: $text;
+}
+body,ul,p {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family:Noto,sans-serif;
+}
+h1,h2,h3,h4,h5,h6 {
+  margin: 0;
+}
+p {
+  line-height: 35px;
+}
+a{
+  text-decoration: none;
+  color: inherit;
+  box-sizing: border-box;
+}
+li {
+  list-style: none;
+}
+h1, h2 {
+  //font-family: BadScript, sans-serif;
+}
+h3 {
+  font-size: 3rem;
+  line-height: 35px;
+  color: $dark-green;
+  margin-top: 25px;
+
+}
+
+.content-margin {
+  margin: 0 5%;
+}
+
+@import "media";
