@@ -1,12 +1,13 @@
+@charset "UTF-8";
 @import "normalize";
 @import "fonts";
 @import "bootstrap-grid";
 @import "const";
 @import "settings";
-@import "magnific_settings";
-@import "magnific";
-/*@import "slick";
-@import "slick-theme";*/
+/*@import "magnific_settings";
+@import "magnific";*/
+@import "slick";
+@import "slick-theme";
 //@import "preloader";
 /*@import "animate";*/
 @import "m_menu";
@@ -15,7 +16,9 @@ html {
   font-size: 10px;
 }
 body {
-  color: $text;
+  color:#fff;
+  -webkit-background-size: cover;
+  background-size: cover;
 }
 body,ul,p {
   margin: 0;
@@ -25,9 +28,6 @@ body,ul,p {
 }
 h1,h2,h3,h4,h5,h6 {
   margin: 0;
-}
-p {
-  line-height: 35px;
 }
 a{
   text-decoration: none;
@@ -40,16 +40,175 @@ li {
 h1, h2 {
   //font-family: BadScript, sans-serif;
 }
-h3 {
-  font-size: 3rem;
-  line-height: 35px;
-  color: $dark-green;
-  margin-top: 25px;
-
+.rotate{
+  animation-name:  bg_reverse;
+  animation-duration:5s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
 }
-
 .content-margin {
-  margin: 0 5%;
+  margin: 0 8%;
+  height: 100%;
+}
+header {
+  background-image: url("../img/header-bg.png");
+  padding: 30px 0 50px;
 }
 
+#section-1 {
+  background-image: url("../img/bg.jpg");
+}
+//menu
+.nav-desktop {
+  margin-top: 30px;
+    &__elements {
+      color: #fff;
+    }
+  &__item {
+    position: relative;
+    &:hover > .nav-desktop__submenu {
+      display: block;
+      left: -100%;
+      transition: 1s;
+    }
+    &:hover > .nav-desktop__link >.link-svg {
+      animation-name: bg;
+      animation-duration:5s;
+      animation-iteration-count: infinite;
+      animation-timing-function: linear;
+    }
+  }
+  &__link {
+    display: flex;
+    padding: 0 10px;
+    height: 35px;
+    line-height: 35px;
+    text-transform: uppercase;
+    .link-svg {
+      display: block;
+      width: 35px;
+      height: 35px;
+      margin-left: 3px;
+      transition: 2s;
+    }
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+  &__submenu {
+    display: flex;
+    position: absolute;
+    border-top: 1px solid #fff;
+    left: -3000px;
+    padding: 5px;
+    /*background-color:rgba(0,0,0,.6)*/
+  }
+  &__submenu-item {
+    display: inline-block;
+    padding: 5px 10px;
+    width: 100%;
+  }
+  &__submenu-link {
+    display: block;
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+}
+.content {
+  padding:100px 0;
+}
+.news{
+  &-block {
+    margin-right: 50px;
+    position: relative;
+    color: #564135;
+  }
+  &-item {
+    padding: 20px 30px 5px;
+    margin-bottom: 40px;
+    background-color: rgba(0,0,0,.8);
+    background-image: url("../img/frozen.png");
+    border-radius: 20px;
+    border: 1px solid #777;
+  }
+  &-content{
+    padding-left: 25px;
+  }
+  &-link {
+    padding: 5px 30px;
+    margin: 15px;
+    background-image: url("../img/gray-texture.jpg");
+    color: #fff;
+  }
+}
+.sidebar {
+  width: 400px;
+  &-contacts {
+    color: #564135;
+    background-image: url("../img/frozen.png");
+    background-color: rgba(0,0,0,.8);
+    padding: 25px 25px 25px 40px;
+    border-radius: 20px;
+    border: 1px solid #777;
+    line-height:1.5;
+    a:hover{
+      text-decoration: underline;
+    }
+  }
+  &-posters {
+    width: 100%;
+    margin: 50px 0;
+    padding:0 25px 45px;
+    background-image: url("../img/gray-texture.jpg");
+    border-radius: 20px;
+    border: 1px solid #777;
+
+    .slider {
+      width: 90%;
+      height: 320px;
+      margin: 0;
+      &-img {
+        width: 100%;
+        height: 320px;
+      }
+    }
+    &-header {
+      width: 100%;
+      height: 45px;
+      line-height: 45px;
+      padding-left: 15px;
+
+    }
+  }
+  &-vk-groop {
+    width: 100%;
+    border-radius: 20px;
+    border: 1px solid #777;
+  }
+}
+footer {
+  height: 50px;
+  background-image: url("../img/header-bg.png");
+}
+.social {
+  width: 174px;
+  height: 100%;
+  &-item {
+    display: block;
+    padding: 3px;
+    background-image: url("../img/gray-texture.jpg");
+    width: 30px;
+    height: 30px;
+    border-radius: 5px;
+    border: 2px solid #777;
+    &:hover{
+      border: 2px dotted #fff;
+    }
+    &-img{
+      width: 100%;
+      height: 100%;
+    }
+  }
+}
 @import "media";
